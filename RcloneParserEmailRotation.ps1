@@ -1,7 +1,7 @@
 # Rclone Log Parser, Email Summary, and Rotation Script
 # Version 1.0
 # No Warranty Expressed
-# Code with Claude Sonnet v4
+# Coded with Claude Sonnet v4
 # Test and verified working 7/22/2025 with Office.com (SMTP Relay)
 #
 # Example Json used
