@@ -1,5 +1,31 @@
 # Rclone Log Parser, Email Summary, and Rotation Script
 # Version 1.0
+# No Warranty Expressed
+# Code with Claude Sonnet v4
+# Test and verified working 7/22/2025 with Office.com (SMTP Relay)
+#
+# Example Json used
+#{
+#    "EmailSettings":  {
+#                          "UseTLS":  true,
+#                         "Username":  "example@company.com",
+#                         "SMTPPort":  25,
+#                          "Password":  "not used with IP auth",
+#                         "FromEmail":  "example@company.com",
+#                          "Subject":  "Rclone Stage 2/2 Summary - {STATUS}",
+#                          "SMTPServer":  "company-com.mail.protection.outlook.com",
+#                          "UseStartTLS":  false,
+#                          "ToEmail":  "example@company.com"
+#                      },
+#    "LogSettings":  {
+#                        "DateFormat":  "yyyyMMdd",
+#                        "ArchivePattern":  "rclone{DATE}.log",
+#                        "ArchiveCount":  30,
+#                        "LogFile":  ".\\rclone.log"
+#                   }
+# }
+#
+
 
 param(
     [string]$ConfigFile = ".\rclone-log-config.json",
