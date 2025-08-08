@@ -1,3 +1,5 @@
+# HTTP Get ping tool with minimal reporting code with Claude
+# No Warranty expressed
 # Enhanced HTTP Ping Script with Live Summary Updates
 param(
     [string]$Target,
@@ -236,4 +238,5 @@ if ($Delay -eq 0) {
 }
 
 # Run the test
+
 Test-HttpEndpoint -Uri $Target -Attempts $Tries -DelaySeconds $Delay -Timeout $TimeoutSec
